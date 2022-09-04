@@ -1,13 +1,13 @@
 package com.mykingdomforapawn.refactoredportfolio;
 
-import java.util.ArrayList;
+//import java.util.ArrayList;
 
 public class Portfolio implements PortfolioInterface{
-    final private ArrayList<Position> investments;
+    //final private ArrayList<Position> investments;
     private int cash;
 
     public Portfolio (){
-        investments = new ArrayList<>();
+        //investments = new ArrayList<>();
         cash = 0;
     }
 

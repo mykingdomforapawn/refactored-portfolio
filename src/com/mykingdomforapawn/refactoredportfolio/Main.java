@@ -2,6 +2,14 @@ package com.mykingdomforapawn.refactoredportfolio;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hi there.");
+        Portfolio portfolio = new Portfolio();
+        portfolio.depositCash(5800);
+        portfolio.displayCash();
+
+        portfolio.openPosition(new StockHolding("google", 34, 13));
+        portfolio.displayPositions();
+        portfolio.displayCash();
+        //portfolio.withdrawCash(7000);
+        //portfolio.withdrawCash(3000);
     }
 }

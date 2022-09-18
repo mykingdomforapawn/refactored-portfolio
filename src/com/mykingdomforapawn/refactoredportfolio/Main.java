@@ -9,7 +9,8 @@ public class Main {
         portfolio.openPosition(new StockHolding("google", 34, 13));
         portfolio.displayPositions();
         portfolio.displayCash();
-        //portfolio.withdrawCash(7000);
-        //portfolio.withdrawCash(3000);
+
+        portfolio.withdrawCash(3000);
+        portfolio.displayCash();
     }
 }

@@ -5,4 +5,6 @@ public abstract class Asset {
     public abstract int getBuyInValue();
 
     public abstract int getCurrentValue();
+
+    public  abstract String toString();
 }

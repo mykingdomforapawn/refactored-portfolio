@@ -7,6 +7,7 @@ public class Main {
         portfolio.displayCash();
 
         portfolio.openPosition(new StockHolding("google", 34, 13));
+        portfolio.openPosition(new StockHolding("aapl", 10, 10));
         portfolio.displayPositions();
         portfolio.displayCash();
 

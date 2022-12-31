@@ -29,7 +29,18 @@ public class Portfolio implements PortfolioInterface{
 
     @Override
     public void displayPositions() {
-        System.out.println(positions);
+        StringBuilder stringBuilder = new StringBuilder();
+
+        for (Asset asset:positions) {
+            stringBuilder.append(asset.toString());
+            stringBuilder.append("\n");
+        }
+
+        if (stringBuilder.length() == 0) {
+            System.out.println("There are no open positions in your portfolio.");
+        } else {
+            System.out.println(stringBuilder);
+        }
     }
 
     @Override

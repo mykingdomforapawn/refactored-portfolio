@@ -19,3 +19,6 @@ out/
 *.zip
 *.tar.gz
 *.rar
+
+# draw.io temp files
+.$*.drawio.bkp

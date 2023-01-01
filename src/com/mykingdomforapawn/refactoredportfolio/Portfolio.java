@@ -13,10 +13,10 @@ public class Portfolio implements PortfolioInterface{
 
     @Override
     public void openPosition(Asset asset) {
-        if (asset.getBuyInValue() > this.cash) {
+        if (asset.getValue() > this.cash) {
             System.out.println("Transaction not successful: Not enough cash available.");
         } else {
-            this.cash -= asset.getBuyInValue();
+            this.cash -= asset.getValue();
             this.positions.add(asset);
             System.out.println("Transaction successful.");
         }
@@ -60,7 +60,7 @@ public class Portfolio implements PortfolioInterface{
         } else if (amount > this.cash) {
             System.out.println("Transaction not successful: Not enough cash available.");
         } else {
-            this.cash += amount;
+            this.cash -= amount;
             System.out.println("Transaction successful.");
         }
     }

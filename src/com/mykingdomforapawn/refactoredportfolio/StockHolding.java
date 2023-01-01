@@ -12,13 +12,8 @@ public class StockHolding extends Asset {
     }
 
     @Override
-    public int getBuyInValue() {
+    public int getValue() {
         return this.shares * this.price;
-    }
-
-    @Override
-    public int getCurrentValue() {
-        return 0;
     }
 
     @Override

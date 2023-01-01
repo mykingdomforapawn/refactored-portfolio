@@ -8,6 +8,9 @@ public class Main {
 
         portfolio.openPosition(new StockHolding("google", 34, 13));
         portfolio.openPosition(new StockHolding("aapl", 10, 10));
+        portfolio.openPosition(new StockHolding("aapl", 10, 10));
+        portfolio.openPosition(new RealEstate("Summer Lodge", 100000));
+        portfolio.openPosition(new RealEstate("Winter Lodge", 1000));
         portfolio.displayPositions();
         portfolio.displayCash();
 

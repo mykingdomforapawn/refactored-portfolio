@@ -2,7 +2,7 @@ package com.mykingdomforapawn.refactoredportfolio;
 
 public class RealEstate extends Asset {
     final private String name;
-    private int price;
+    final private int price;
 
     public RealEstate(String name, int price) {
         this.name = name;

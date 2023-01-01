@@ -18,7 +18,6 @@ public class Portfolio implements PortfolioInterface{
         } else {
             this.cash -= asset.getValue();
             this.positions.add(asset);
-            System.out.println("Transaction successful.");
         }
     }
 

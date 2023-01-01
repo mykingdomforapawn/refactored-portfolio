@@ -2,8 +2,8 @@ package com.mykingdomforapawn.refactoredportfolio;
 
 public class StockHolding extends Asset {
     final private String ticker;
-    private int shares;
-    private int price;
+    final private int shares;
+    final private int price;
 
     public StockHolding(String ticker, int shares, int price) {
         this.ticker = ticker;

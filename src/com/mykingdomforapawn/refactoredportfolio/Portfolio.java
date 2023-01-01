@@ -22,11 +22,6 @@ public class Portfolio implements PortfolioInterface{
     }
 
     @Override
-    public void closePosition(Asset asset) {
-
-    }
-
-    @Override
     public void displayPositions() {
         StringBuilder stringBuilder = new StringBuilder();
 

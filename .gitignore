@@ -21,4 +21,4 @@ out/
 *.rar
 
 # draw.io temp files
-.$*.drawio.bkp
+.$*.drawio.*
